@@ -1,1 +1,1 @@
-# dikamaliyot
+# web dasturlash labaratoriya Parpiyev Mirobidjon
