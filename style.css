@@ -1,0 +1,335 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,500;1,400&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+    font-family: 'Roboto', sans-serif;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.header{
+    border-bottom: 1px solid #E2E8F0;
+    background-color: rgb(69, 49, 94);
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 1.5rem;
+}
+
+.hamburger {
+    display: none;
+}
+
+.bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: #101010;
+}
+
+.nav-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-item {
+    margin-left: 5rem;
+}
+
+.nav-link{
+    font-size: 1.6rem;
+    font-weight: 400;
+    color:azure;
+}
+
+.nav-link:hover{
+    color: #482ff7;
+}
+
+.nav-logo {
+    font-size: 2.1rem;
+    font-weight: 500;
+    color:azure;
+}
+
+@media only screen and (max-width: 768px) {
+    .nav-menu {
+        position: fixed;
+        left: -100%;
+        top: 5rem;
+        flex-direction: column;
+        background-color: rgb(69, 49, 94);
+        width: 100%;
+        border-radius: 10px;
+        text-align: center;
+        transition: 0.3s;
+        box-shadow:
+            0 10px 27px rgb(245, 241, 241);
+    }
+
+    .nav-menu.active {
+        left: 0;
+    }
+
+    .nav-item {
+        margin: 2.5rem 0;
+    }
+
+    .hamburger {
+        display: block;
+        cursor: pointer;
+    }
+
+    .hamburger.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    .hamburger.active .bar:nth-child(1) {
+        -webkit-transform: translateY(8px) rotate(45deg);
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    .hamburger.active .bar:nth-child(3) {
+        -webkit-transform: translateY(-8px) rotate(-45deg);
+        transform: translateY(-8px) rotate(-45deg);
+    }
+}
+* {box-sizing:border-box}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1366px;
+  position: relative;
+  margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style-type: none;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.boshqismi{
+    text-decoration: none;
+    list-style-type: none;
+    box-sizing: border-box;
+    top:0;
+    background-color: rgb(69, 49, 94);
+    color: azure;
+    overflow: auto;
+}
+.em{
+    font-size: larger;
+    float: left;
+}     
+
+.boshqismi ul{
+    text-decoration: none;
+    list-style-type: none;
+    box-sizing: border-box;   
+    float: right;
+    margin-left:300px;
+}
+.boshqismi ul li{
+    text-decoration: none;
+    list-style-type: none;
+    box-sizing: border-box;
+    float: left;
+}
+.boshqismi ul li a {
+    text-decoration: none;
+    list-style-type: none;
+    box-sizing: border-box;
+    display:inline-block;
+    padding: 25px;
+}
+.boshqismi ul li a:hover , .boshqismi ul li a.boshqismi{
+    color: bisque;
+    border-radius: 13px;
+    background-color: rgb(76, 15, 151);
+}
+.boshqismi a{
+    text-decoration: none;
+    list-style-type: none;
+    box-sizing: border-box;
+    padding: 25px;
+    color: azure   ;
+}
+p{
+    margin: 10px 0;
+}
+.katalog{
+    color: azure;
+    text-align: center;
+    background-color: rgb(69, 49, 94);
+}
+.box1{
+    display: flex;
+    justify-content: space-around;
+
+}
+h4{
+    text-align: center;
+    padding: 10px;
+
+}
+.us{
+    padding: 60px 0;
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    color:rgb(152, 219, 178);
+}
+.us1{
+    
+    padding: 15px; 
+    border-radius: 15px;
+    background-color: rgb(69, 49, 94);
+    margin:0 80px;
+}
+.us2{
+    padding: 15px;
+    border-radius: 15px;
+    margin:0 80px;
+    background-color: rgb(69, 49, 94);
+}
+.us3{
+    padding: 15px;
+    border-radius: 15px;
+    margin:0 80px;
+    background-color: rgb(69, 49, 94);
+}
+input[type=text], select, textarea {
+    width: 100%; 
+    padding: 12px; 
+    border: 1px solid #ccc; 
+    border-radius: 4px; 
+    box-sizing: border-box; 
+    margin-top: 6px; 
+    margin-bottom: 16px; 
+    resize: vertical 
+  }
+  
+
+  input[type=submit] {
+    background-color: rgb(69, 49, 94);
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  input[type=submit]:hover {
+    background-color: rgb(69, 49, 94);
+  }
+
+  .container1 {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+  }
